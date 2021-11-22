@@ -40,7 +40,7 @@ int	main()
 		iter(array, sizeof(array) / sizeof(array[0]), print);
 	}
 	{
-		print_header("int array (function ptr is NULL)");
+		print_header("int array (array is NULL)");
 		const int*  array = NULL;
 		iter(array, 1, print);
 	}
