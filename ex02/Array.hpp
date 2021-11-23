@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:40:50 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/22 16:04:54 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/23 23:22:43 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ public:
 	{
 		virtual const char*	what() const throw()
 		{
-			return "Out of range";
+			return "out of range";
 		}
 	};
 

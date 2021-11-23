@@ -1,5 +1,5 @@
 NAME		:= a.out
-ifdef TEST2
+ifdef TEST
 SRCS		:= main2.cpp
 else
 SRCS		:= main.cpp
@@ -41,6 +41,6 @@ re:			fclean $(NAME)
 
 -include	$(DEPENDS)
 
-.PHONY:		test2
-test2:
-			$(MAKE) TEST2=TRUE
+.PHONY:		test
+test:
+			$(MAKE) TEST=TRUE
