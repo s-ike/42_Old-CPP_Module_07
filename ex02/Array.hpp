@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:40:50 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/23 23:22:43 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/12/19 00:09:39 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ class Array
 public:
 	Array(unsigned n = 0)
 		: _size(n), _array(new T[_size])
-	{}
+	{
+		for (unsigned i = 0; i < _size; i++)
+			_array[i] = T();
+	}
 	Array(const Array& other)
 		: _size(other._size), _array(new T[_size])
 	{
